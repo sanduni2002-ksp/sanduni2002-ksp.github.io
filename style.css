@@ -1,1 +1,359 @@
 
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    padding: 75px 10%;
+}
+
+section h2 {
+    font-size: 32px;
+    color: #1f3352;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #1f3352;
+    padding-bottom: 10px;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+header {
+    background: #1f3352;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    width: 90%;
+    margin: auto;
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h2 {
+    color: white;
+    font-size: 21px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    opacity: 0.7;
+}
+
+
+/* =========================
+   HOME / HERO
+========================= */
+
+.hero {
+    min-height: 88vh;
+    background: #e8eaed;
+    display: flex;
+    align-items: center;
+}
+
+.hero-text {
+    max-width: 750px;
+}
+
+.welcome {
+    color: #1f3352;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    line-height: 1.05;
+    color: #1f3352;
+    margin-bottom: 18px;
+}
+
+.hero h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #374151;
+}
+
+.hero p {
+    max-width: 700px;
+    font-size: 17px;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 30px;
+}
+
+.btn {
+    background: #1f3352;
+    color: white;
+    padding: 12px 22px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+.btn.secondary {
+    background: transparent;
+    color: #1f3352;
+    border: 2px solid #1f3352;
+}
+
+
+/* =========================
+   ABOUT
+========================= */
+
+#about {
+    background: white;
+}
+
+#about p {
+    max-width: 900px;
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+
+/* =========================
+   SKILLS
+========================= */
+
+#skills {
+    background: #f4f6f8;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+    color: #1f3352;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   EXPERIENCE
+========================= */
+
+#experience {
+    background: white;
+}
+
+.project-card {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.project-card h3 {
+    color: #1f3352;
+    margin-bottom: 5px;
+}
+
+.project-card h4 {
+    color: #6b7280;
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   PROJECTS
+========================= */
+
+#projects {
+    background: #f4f6f8;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.projects-grid .project-card {
+    border-left: 5px solid #1f3352;
+}
+
+.project-card p {
+    margin: 10px 0;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 12px;
+    color: #1f3352;
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   CERTIFICATIONS
+========================= */
+
+#certifications {
+    background: white;
+}
+
+#certifications .card {
+    margin-bottom: 18px;
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+#contact {
+    background: #1f3352;
+    color: white;
+}
+
+#contact h2 {
+    color: white;
+    border-color: white;
+}
+
+#contact p {
+    margin-bottom: 12px;
+    font-size: 17px;
+}
+
+#contact a {
+    color: white;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #16263d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
+@media (max-width: 850px) {
+
+    nav {
+        flex-direction: column;
+        padding: 18px 0;
+    }
+
+    nav ul {
+        margin-top: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero h3 {
+        font-size: 20px;
+    }
+
+    .skills-grid,
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 60px 7%;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .hero h1 {
+        font-size: 37px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .btn {
+        text-align: center;
+    }
+}
